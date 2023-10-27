@@ -1,8 +1,11 @@
 const plugin = require("tailwindcss/plugin");
+const plugin = require("flowbite/plugin");
 
 module.exports = {
+
   mode: "jit",
-  content: ["./build/**/*.{html,js}"],
+  content: ["./build/**/*.{html,js}",
+            "./node_modules/flowbite/**/*.js"],
   presets: [],
   darkMode: "class",
   theme: {
